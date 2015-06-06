@@ -1,0 +1,204 @@
+/*
+* Qualitative Theme Webdesign
+*
+* @license       http://www.gnu.org/licenses/old-licenses/gpl-2.0.html GNU General Public License (GPL)
+* @package       Sinnedesign, http://www.sinnedesign.com
+* @theme_author  Gesine Max (sinnedesign at www.sinnedesign.com)
+* @version	 $Id: style.ie6.css 702 2009-04-17 09:37:57Z sinnedesign $
+*
+* Thanks you, that you have left this header untouched
+*/
+.sd-hgcolimg { 
+	background: none;  
+	behavior: expression(this.runtimeStyle.filter?'':this.runtimeStyle.filter="progid:DXImageTransform.Microsoft.AlphaImageLoader(src='"+GetStyleUrl()+"../img/bg-img.png',sizingMethod='crop')"); 
+}
+img {  behavior: expression((this.runtimeStyle.behavior="none")&&(this.pngSet?this.pngSet=true:(this.nodeName == "IMG" && this.src.toLowerCase().indexOf('.png')>-1?(this.runtimeStyle.backgroundImage = "none", this.runtimeStyle.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + this.src + "', sizingMethod='image')", this.src = GetStyleUrl()+"../img/blank.gif"):(this.origBg = this.origBg? this.origBg :this.currentStyle.backgroundImage.toString().replace('url("', '').replace('")', ''), this.runtimeStyle.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + this.origBg + "', sizingMethod='crop')", this.runtimeStyle.backgroundImage = "none")), this.pngSet=true)); 
+}
+.sd-inhalt, .sd-inhalt-hg { zoom: 1; }
+.sd-inhalt-hg { position: static; }
+.sd-inhalt-or, .sd-inhalt-ol, .sd-inhalt-ur, .sd-inhalt-ul, .sd-inhalt-om, .sd-inhalt-um, .sd-inhalt-mr, .sd-inhalt-ml { 
+	font-size: 1px; 
+	background: none; 
+}
+.sd-inhalt-or, .sd-inhalt-ol, .sd-inhalt-ur, .sd-inhalt-ul { behavior: expression(this.runtimeStyle.filter?'':this.runtimeStyle.filter="progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + GetStyleUrl()+"../img/content-ecken.png',sizingMethod='scale')"); }
+.sd-inhalt-ol { clip: rect(auto 66px 66px auto); }
+.sd-inhalt-or { 
+	left: expression(this.parentNode.offsetWidth-132+'px'); 
+	clip: rect(auto auto 66px 66px); 
+}
+.sd-inhalt-ul { 
+	top: expression(this.parentNode.offsetHeight-132+'px'); 
+	clip: rect(66px 66px auto auto); 
+}
+.sd-inhalt-ur { 
+	top: expression(this.parentNode.offsetHeight-132+'px'); 
+	left: expression(this.parentNode.offsetWidth-132+'px'); 
+	clip: rect(66px auto auto 66px); 
+}
+.sd-inhalt-om, .sd-inhalt-um { 
+	width: expression(this.parentNode.offsetWidth-132+'px'); 
+	behavior: expression(this.runtimeStyle.filter?'':this.runtimeStyle.filter="progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + GetStyleUrl()+"../img/content-h-kante.png',sizingMethod='scale')"); 
+}
+.sd-inhalt-om { clip: rect(auto auto 66px auto); }
+.sd-inhalt-um { 
+	top: expression(this.parentNode.offsetHeight-132+'px'); 
+	clip: rect(66px auto auto auto); 
+}
+.sd-inhalt-mr, .sd-inhalt-ml {  
+	height: expression(this.parentNode.offsetHeight-132+'px'); 
+	behavior: expression(this.runtimeStyle.filter?'':this.runtimeStyle.filter="progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + GetStyleUrl()+"../img/content-v-kante.png',sizingMethod='scale')"); 
+}
+.sd-inhalt-mr { left: expression(this.parentNode.offsetWidth-132+'px'); clip: rect(auto auto auto 66px); }
+.sd-inhalt-ml { clip: rect(auto 66px auto auto); }
+.sd-inhalt-mm { 
+	font-size: 1px;  
+	width: expression(this.parentNode.offsetWidth-132+'px'); 
+	height: expression(this.parentNode.offsetHeight-132+'px'); 
+	background: none;  
+	behavior: expression(this.runtimeStyle.filter?'':this.runtimeStyle.filter="progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + GetStyleUrl()+"../img/content-mitte.png',sizingMethod='scale')"); 
+}
+div.sd-kopf-png { 
+	font-size: 1px; 
+	background: none;  
+	behavior: expression(this.runtimeStyle.filter?'':this.runtimeStyle.filter="progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + GetStyleUrl()+"../img/header-bg.png',sizingMethod='crop')"); 
+}
+.sd-menue, .sd-menue ul { height: 1%; }
+.sd-menue li.sd-menuehover { z-index: 10000; }
+.sd-menue .sd-menuehoverUL { visibility: visible; }
+.sd-menue .sd-menuehoverUL { top: 100%; left: 0; }
+.sd-menue .sd-menuehoverUL .sd-menuehoverUL { top: 0; left: 100%; }
+.sd-menue ul a { height: 1%; }
+.sd-menue li li { float: left; width: 100%; }
+.sd-menue .sd-menuehoverUL .sd-menuehoverUL { top: 5px; left: 100%; }
+.sd-menue, .sd-menue ul { height: 1%; }
+.sd-menue li.sd-menuehover { z-index: 10000; }
+.sd-menue .sd-menuehoverUL { visibility: visible; }
+.sd-menue .sd-menuehoverUL { top: 100%; left: 0; }
+.sd-menue .sd-menuehoverUL .sd-menuehoverUL { top: 0; left: 100%; }
+.sd-menue ul a { height: 1%; }
+.sd-menue li li { float: left; width: 100%; }
+.sd-navbar { zoom: 1; }
+.sd-navbar .links, .sd-navbar .rechts { 
+	font-size: 1px; 
+	background: none;  
+	behavior: expression(this.runtimeStyle.filter?'':this.runtimeStyle.filter="progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + GetStyleUrl()+"../img/navbar-bg.png',sizingMethod='crop')"); 
+}
+.sd-navbar .links {  width: expression(this.parentNode.offsetWidth-0+'px'); }
+.sd-navbar .rechts { left: expression(this.parentNode.offsetWidth-980+'px'); clip: rect(auto auto auto 980px); }
+.sd-menue a { float:left; }
+.sd-menue a:hover { visibility:visible; }
+.sd-menue a .rechts, .sd-menue a .links { 
+	font-size: 1px; 
+	background: none;  
+	behavior: expression(this.runtimeStyle.filter?'':this.runtimeStyle.filter="progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + GetStyleUrl()+"../img/menue-bg.png',sizingMethod='crop')"); 
+}
+.sd-menue a .rechts { left: expression(this.parentNode.offsetWidth-420+'px'); clip: rect(auto auto auto 410px); }
+.sd-menue a .links {  width: expression(this.parentNode.offsetWidth-10+'px'); }
+.sd-menuehover .sd-menuehoverA .oben { color: #bb0066; }
+.sd-menuehover .sd-menuehoverA .links, .sd-menuehover .sd-menuehoverA .rechts { top: -25px; }
+.sd-menue ul a { color: #770033 !important; }
+.sd-menue ul a:hover { color: #bb0066 !important; }
+.sd-menue ul .sd-menuehover .sd-menuehoverA { color: #bb0066 !important; background-position: 0 -20px; }
+.sd-navbar .sd-menue ul a:hover span, .sd-navbar .sd-menue ul a:hover span span { color: #bb0066 !important; }
+.sd-navbar .sd-menue ul .sd-menuehover .sd-menuehoverA span, .sd-navbar .sd-menue ul .sd-menuehover .sd-menuehoverA span span { color: #bb0066 !important; }
+.sd-block, .sd-block-hg { zoom:1; }
+.sd-block-hg { position:static; }
+.sd-blockheader, .sd-blockheader { font-size: 1px; }
+.sd-header-icon { 
+	background: none;  
+	behavior: expression(this.runtimeStyle.filter?'':this.runtimeStyle.filter="progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + GetStyleUrl()+"../img/bg-blocktitle-icon.png',sizingMethod='crop')"); 
+}
+.sd-block-inhalt, .sd-block-inhalt-hg { zoom:1; }
+.sd-block-inhalt-hg { position:static; }
+.sd-block-inhalt-or, .sd-block-inhalt-ol, .sd-block-inhalt-ur, .sd-block-inhalt-ul, .sd-block-inhalt-om, .sd-block-inhalt-um, .sd-block-inhalt-mr, .sd-block-inhalt-ml { font-size: 1px; background: none; }
+.sd-block-inhalt-or, .sd-block-inhalt-ol, .sd-block-inhalt-ur, .sd-block-inhalt-ul {  
+	behavior: expression(this.runtimeStyle.filter?'':this.runtimeStyle.filter="progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + GetStyleUrl()+"../img/block-ecken.png',sizingMethod='crop')"); 
+}
+.sd-block-inhalt-ol { clip: rect(auto 7px 7px auto); }
+.sd-block-inhalt-or { 
+	left: expression(this.parentNode.offsetWidth-14+'px'); 
+	clip: rect(auto auto 7px 7px); 
+}
+.sd-block-inhalt-ul { 
+	top: expression(this.parentNode.offsetHeight-14+'px'); 
+	clip: rect(7px 7px auto auto); 
+}
+.sd-block-inhalt-ur { 
+	top: expression(this.parentNode.offsetHeight-14+'px'); 
+	left: expression(this.parentNode.offsetWidth-14+'px'); 
+	clip: rect(7px auto auto 7px); 
+}
+.sd-block-inhalt-om, .sd-block-inhalt-um {  
+	width: expression(this.parentNode.offsetWidth-14+'px'); 
+	behavior: expression(this.runtimeStyle.filter?'':this.runtimeStyle.filter="progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + GetStyleUrl()+"../img/block-h-kante.png',sizingMethod='crop')"); 
+}
+.sd-block-inhalt-om { clip: rect(auto auto 7px auto); }
+.sd-block-inhalt-um { 
+	top: expression(this.parentNode.offsetHeight-14+'px'); 
+	clip: rect(7px auto auto auto); 
+}
+.sd-block-inhalt-mr, .sd-block-inhalt-ml { 
+	height: expression(this.parentNode.offsetHeight-14+'px'); 
+	behavior: expression(this.runtimeStyle.filter?'':this.runtimeStyle.filter="progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + GetStyleUrl()+"../img/block-v-kante.png',sizingMethod='crop')"); 
+}
+.sd-block-inhalt-mr { 
+	left: expression(this.parentNode.offsetWidth-14+'px'); 
+	clip: rect(auto auto auto 7px); 
+}
+.sd-block-inhalt-ml { clip: rect(auto 7px auto auto); }
+.sd-block-inhalt-mm { 
+	font-size: 1px;  
+	width: expression(this.parentNode.offsetWidth-14+'px'); 
+	height: expression(this.parentNode.offsetHeight-14+'px'); 
+}
+.sd-block-inhalt-hg ul li { 
+	background: none; 
+	height: 1%;
+	behavior: expression(this.runtimeStyle.filter?'':this.runtimeStyle.filter="progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + GetStyleUrl()+"../img/block-punkte.png',sizingMethod='crop')"); 
+}
+.sd-position, .sd-pos-hg { zoom: 1; }
+.sd-pos-hg { position: static; }
+h1 { margin: 0.67em 0; }
+h2 { margin: 0.8em 0; }
+h3 { margin: 1em 0; }
+h4 { margin: 1.25em 0; }
+h5 { margin: 1.67em 0; }
+h6 { margin: 2.33em 0; }
+.sd-position ul li, .sd-position ol ul li { 
+	background: none;
+	height: 1%; 
+	behavior: expression(this.runtimeStyle.filter?'':this.runtimeStyle.filter="progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + GetStyleUrl()+"../img/pos-punkte.png',sizingMethod='crop')"); 
+}
+.sd-position ul ol li { 
+	background: none;  
+	behavior: expression(this.runtimeStyle.filter?'':this.runtimeStyle.filter=""); 
+}
+blockquote { 
+	background-image: none;
+	height:1%; 
+	behavior: expression(this.runtimeStyle.filter?'':this.runtimeStyle.filter="progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + GetStyleUrl()+"../img/pos-zitat.png',sizingMethod='crop')"); 
+}
+.sd-Button { display:list-item; list-style-type:none; float:left; }
+.sd-Button, .sd-Button .btn, .sd-Button .btn .links, .sd-Button .btn .rechts { font-size: 1px; }
+.sd-Button .btn .oben { display:inline-block; }
+.sd-Button .btn .links, .sd-Button .btn .rechts { 
+	background: none; 
+	behavior: expression(this.runtimeStyle.filter?'':this.runtimeStyle.filter="progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + GetStyleUrl()+"../img/button-bg.png',sizingMethod='crop')"); 
+}
+.sd-Button .btn .rechts { 
+	left: expression(this.parentNode.offsetWidth-409+'px'); 
+	clip: rect(auto auto auto 405px); 
+}
+.sd-Button .btn .links { width: expression(this.parentNode.offsetWidth-4+'px'); }
+.sd-footer .sd-footer-hg { 
+	top: expression(this.parentNode.offsetHeight-150+'px'); 
+	background: none; 
+	behavior: expression(this.runtimeStyle.filter?'':this.runtimeStyle.filter="progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + GetStyleUrl()+"../img/footer-bg.png',sizingMethod='crop')"); 
+	zoom: 1; 
+	font-size:1px; 
+}
+.sd-rss-ticon { 
+	background: none;
+	zoom: 1; 
+	font-size: 1px; 
+	behavior: expression(this.runtimeStyle.filter?'':this.runtimeStyle.filter="progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + GetStyleUrl()+"../icons/action/feed.png',sizingMethod='crop')"); }

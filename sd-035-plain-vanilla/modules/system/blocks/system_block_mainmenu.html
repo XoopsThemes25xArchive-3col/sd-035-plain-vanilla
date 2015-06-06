@@ -1,0 +1,22 @@
+<{*
+* Qualitative Theme Webdesign
+*
+* @license       http://www.gnu.org/licenses/old-licenses/gpl-2.0.html GNU General Public License (GPL)
+* @package       Sinnedesign, http://www.sinnedesign.com
+* @theme_author  Gesine Max (sinnedesign at www.sinnedesign.com)
+* @version	 $Id: system_block_mainmenu.html 702 2009-04-17 09:37:57Z sinnedesign $
+*
+* Thanks you, that you have left this header untouched
+*}>
+<div id="mainmenu">
+    <a class="menuTop<{if $xoops_dirname=='system'}> actlink<{/if}>" href="<{$xoops_url}>/index.php" title="<{$block.lang_home}>"><{$block.lang_home}></a>
+ <{foreach item=module from=$block.modules}>
+    <a class="menuMain<{if $xoops_dirname==$module.directory}> actlink<{/if}>" href="<{$xoops_url}>/modules/<{$module.directory}>/" title="<{$module.name}>"><{$module.name}></a>
+    <{foreach item=sublink from=$module.sublinks}>
+      <a class="menuSub" href="<{$sublink.url}>" title="<{$sublink.name}>"><{$sublink.name}></a>
+    <{/foreach}>
+ <{/foreach}>
+ <{if $block.priv_enabled == true}>
+    <a class="menuMain<{if $xoops_dirname=='system'}> actlink<{/if}>" href="<{$xoops_url}>/privpolicy.php" title="<{$block.lang_privpolicy}>"><{$block.lang_privpolicy}></a>
+ <{/if}>
+</div>

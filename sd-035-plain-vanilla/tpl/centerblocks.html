@@ -1,0 +1,114 @@
+<{*
+* Qualitative Theme Webdesign
+*
+* @license       http://www.gnu.org/licenses/old-licenses/gpl-2.0.html GNU General Public License (GPL)
+* @package       Sinnedesign, http://www.sinnedesign.com
+* @theme_author  Gesine Max (sinnedesign at www.sinnedesign.com)
+* @version	 $Id: centerblocks.html 702 2009-04-17 09:37:57Z sinnedesign $
+*
+* Thanks you, that you have left this header untouched
+*}>
+<{if $lcr=='l'}><{assign var=lcr value='left'}>
+<{elseif $lcr=='r'}><{assign var=lcr value='right'}>
+<{else}><{assign var=lcr value='center'}>
+<{/if}>
+<{if $topbottom=="top"}>
+<{if $sd_page_topcenter && $lcr=="center"}>
+ <div class="sd-blockszone x2-secondary" id="sd-hg-om-block">
+    <{foreach from=$sd_page_topcenter item=block}>
+    <div class="sd-position">
+	<div class="sd-pos-hg">
+	  <div class="sd-pos-innen">
+	      <{if $block.title}>
+	      <div class="sd-pos-meta"><h2 class="sd-pos-hicon-wrap"><span class="sd-pos-header"><{$block.title}></span></h2></div>
+	      <{/if}>
+	      <div class="sd-pos-inhalt"><{$block.content}></div>
+	  </div>
+	</div>
+    </div>
+    <{/foreach}>
+ </div>
+<{/if}>
+<{if $sd_page_topleft && $lcr=="left"}>
+ <div class="sd-blockszone x2-secondary" id="sd-hg-ol-block">
+    <{foreach from=$sd_page_topleft item=block}>
+    <div class="sd-position">
+	<div class="sd-pos-hg">
+	    <div class="sd-pos-innen">
+		<{if $block.title}>
+		<div class="sd-pos-meta"><h2 class="sd-pos-hicon-wrap"><span class="sd-pos-header"><{$block.title}></span></h2></div>
+		<{/if}>
+		<div class="sd-pos-inhalt"><{$block.content}></div>
+	    </div>
+	</div>
+    </div>
+    <{/foreach}>
+ </div>
+<{/if}>
+<{if $sd_page_topright && $lcr=="right"}>
+ <div class="sd-blockszone x2-secondary" id="sd-hg-or-block">
+    <{foreach from=$sd_page_topright item=block}>
+    <div class="sd-position">
+	<div class="sd-pos-hg">
+	    <div class="sd-pos-innen">
+		<{if $block.title}>
+		<div class="sd-pos-meta"><h2 class="sd-pos-hicon-wrap"><span class="sd-pos-header"><{$block.title}></span></h2></div>
+		<{/if}>
+		<div class="sd-pos-inhalt"><{$block.content}></div>
+	    </div>
+	</div>
+    </div>
+    <{/foreach}>
+ </div>
+<{/if}>
+<{/if}>
+<{if $topbottom=="bottom"}>
+<{if $sd_page_bottomcenter && $lcr=="center"}>
+ <div class="sd-blockszone x2-secondary" id="sd-hg-um-block">
+    <{foreach from=$sd_page_bottomcenter item=block}>
+    <div class="sd-position">
+	<div class="sd-pos-hg">
+	    <div class="sd-pos-innen">
+		<{if $block.title}>
+		<div class="sd-pos-meta"><h2 class="sd-pos-hicon-wrap"><span class="sd-pos-header"><{$block.title}></span></h2></div>
+		<{/if}>
+		<div class="sd-pos-inhalt"><{$block.content}></div>
+	    </div>
+	</div>
+    </div>
+    <{/foreach}>
+ </div>
+<{/if}>
+<{if $sd_page_bottomleft && $lcr=="left"}>
+ <div class="sd-blockszone x2-secondary" id="sd-hg-ul-block">
+    <{foreach from=$sd_page_bottomleft item=block}>
+    <div class="sd-position">
+	<div class="sd-pos-hg">
+	    <div class="sd-pos-innen">
+		<{if $block.title}>
+		<div class="sd-pos-meta"><h2 class="sd-pos-hicon-wrap"><span class="sd-pos-header"><{$block.title}></span></h2></div>
+		<{/if}>
+		<div class="sd-pos-inhalt"><{$block.content}></div>
+	    </div>
+	</div>
+    </div>
+    <{/foreach}>
+ </div>
+<{/if}>
+<{if $sd_page_bottomright && $lcr=="right"}>
+ <div class="sd-blockszone x2-secondary" id="sd-hg-ur-block">
+    <{foreach from=$sd_page_bottomright item=block}>
+    <div class="sd-position">
+	<div class="sd-pos-hg">
+	    <div class="sd-pos-innen">
+		<{if $block.title}>
+		<div class="sd-pos-meta"><h2 class="sd-pos-hicon-wrap"><span class="sd-pos-header"><{$block.title}></span></h2></div>
+		<{/if}>
+		<div class="sd-pos-inhalt"><{$block.content}></div>
+	    </div>
+	</div>
+    </div>
+    <{/foreach}>
+ </div>
+<{/if}>
+<{/if}>

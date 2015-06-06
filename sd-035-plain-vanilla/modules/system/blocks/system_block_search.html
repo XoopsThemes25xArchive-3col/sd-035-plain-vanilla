@@ -1,0 +1,27 @@
+<{*
+* Qualitative Theme Webdesign
+*
+* @license       http://www.gnu.org/licenses/old-licenses/gpl-2.0.html GNU General Public License (GPL)
+* @package       Sinnedesign, http://www.sinnedesign.com
+* @theme_author  Gesine Max (sinnedesign at www.sinnedesign.com)
+* @version	 $Id: system_block_search.html 770 2009-04-19 19:14:33Z sinnedesign $
+*
+* Thanks you, that you have left this header untouched
+*}>
+<div style="width:100%;">
+    <form style="margin-top:0px;" action="<{$xoops_url}>/search.php" method="get">
+	<div style="width:100%;overflow:hidden;">
+	    <input type="text" name="query" size="64" maxlength="32" /><input type="hidden" name="action" value="results" />
+	</div>
+	<br />
+	<div align="center" style="float:both;">
+	    <button name="search" type="submit" class="sd-Button">
+	      <span class="btn">
+		<span class="links"></span><span class="rechts"></span>
+		<span class="oben"><{$block.lang_search}></span>
+	      </span>
+	    </button>
+	</div>
+    </form>
+</div>
+<p><a href="<{$xoops_url}>/search.php" title="<{$block.lang_advsearch}>"><{$block.lang_advsearch}></a></p>

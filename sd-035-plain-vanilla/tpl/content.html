@@ -1,0 +1,56 @@
+<{*
+* Qualitative Theme Webdesign
+*
+* @license       http://www.gnu.org/licenses/old-licenses/gpl-2.0.html GNU General Public License (GPL)
+* @package       Sinnedesign, http://www.sinnedesign.com
+* @theme_author  Gesine Max (sinnedesign at www.sinnedesign.com)
+* @version	 $Id: content.html 702 2009-04-17 09:37:57Z sinnedesign $
+*
+* Thanks you, that you have left this header untouched
+*}>
+<div class="inhaltAufbau">
+    <div class="linke-seite">
+	<!-- linke Seite -->
+	<{if $sd_rtl}>
+	<{if $sd_canvas_right}><{includeq file="$theme_tpl/blockszone.html" blocks=$sd_canvas_right zoneClass='sd-canvas-column' zoneId='sd-canvas-rightcolumn'}><{/if}>
+	<{else}>
+	<{if $sd_canvas_left}><{includeq file="$theme_tpl/blockszone.html" blocks=$sd_canvas_left zoneClass='sd-canvas-column' zoneId='sd-canvas-leftcolumn'}><{/if}>
+	<{/if}>
+    </div>
+    <div class="inhalt">
+	<!-- mitte -->
+	<{if $sd_page_topleft or $sd_page_topcenter or $sd_page_topright}>
+	<div class="sd-blockszone sd-<{$theme_top_order}>pageblocks" id="sd-hg-o-block"> 
+	  <{includeq file="$theme_tpl/centerblocks.html" topbottom=top lcr=$theme_top_order|substr:0:1}>
+	  <{includeq file="$theme_tpl/centerblocks.html" topbottom=top lcr=$theme_top_order|substr:1:1}>
+	  <{includeq file="$theme_tpl/centerblocks.html" topbottom=top lcr=$theme_top_order|substr:2:1}> 
+	</div>
+	<{/if}>
+	<!-- modul mitte -->
+	<{if $sd_contents}>
+	<div class="sd-position">
+	  <div class="sd-pos-hg">
+	  <div class="sd-pos-innen">
+	    <div class="sd-pos-inhalt"><{$sd_contents}></div>
+	  </div>
+	  </div>
+	</div>
+	<{/if}>
+	<!-- unten -->
+	<{if $sd_page_bottomleft or $sd_page_bottomcenter or $sd_page_bottomright}>
+	<div class="sd-blockszone sd-<{$theme_bottom_order}>pageblocks" id="sd-hg-u-block"> 
+	  <{includeq file="$theme_tpl/centerblocks.html" topbottom=bottom lcr=$theme_bottom_order|substr:0:1}>
+	  <{includeq file="$theme_tpl/centerblocks.html" topbottom=bottom lcr=$theme_bottom_order|substr:1:1}>
+	  <{includeq file="$theme_tpl/centerblocks.html" topbottom=bottom lcr=$theme_bottom_order|substr:2:1}> 
+	</div>
+	<{/if}> 
+    </div>
+    <div class="rechte-seite">
+	<!-- rechte Seite -->
+	<{if $sd_rtl}>
+	<{if $sd_canvas_left}><{includeq file="$theme_tpl/blockszone.html" blocks=$sd_canvas_left zoneClass='sd-canvas-column' zoneId='sd-canvas-leftcolumn'}><{/if}>
+	<{else}>
+	<{if $sd_canvas_right}><{includeq file="$theme_tpl/blockszone.html" blocks=$sd_canvas_right zoneClass='sd-canvas-column' zoneId='sd-canvas-rightcolumn'}><{/if}>
+	<{/if}>
+    </div>
+</div>

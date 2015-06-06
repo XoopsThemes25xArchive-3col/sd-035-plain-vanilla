@@ -1,0 +1,24 @@
+<{*
+* Qualitative Theme Webdesign
+*
+* @license       http://www.gnu.org/licenses/old-licenses/gpl-2.0.html GNU General Public License (GPL)
+* @package       Sinnedesign, http://www.sinnedesign.com
+* @theme_author  Gesine Max (sinnedesign at www.sinnedesign.com)
+* @version	 $Id: system_block_waiting.html 702 2009-04-17 09:37:57Z sinnedesign $
+*
+* Thanks you, that you have left this header untouched
+*}>
+<div style="width:100%;">
+    <ul>
+      <{foreach item=module from=$block.modules}>
+	<li style="list-style:none;list-style-image:none;">
+	    <div align="right" style="_height:100%;overflow:hidden;">
+	      <div align="left" style="float:left;width:132px;overflow:hidden;">
+		<a href="<{$module.adminlink}>" title="<{$module.pendingnum}> <{$module.lang_linkname}>"><{$module.lang_linkname}></a>
+	      </div>
+	    <{$module.pendingnum}>
+	    </div>
+	</li>
+      <{/foreach}>
+    </ul>
+</div>

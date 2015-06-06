@@ -1,0 +1,104 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<{*
+* Qualitative Theme Webdesign
+*
+* @license       http://www.gnu.org/licenses/old-licenses/gpl-2.0.html GNU General Public License (GPL)
+* @package       Sinnedesign, http://www.sinnedesign.com
+* @theme_author  Gesine Max (sinnedesign at www.sinnedesign.com)
+* @version	 $Id: system_siteclosed.html 770 2009-04-19 19:14:33Z sinnedesign $
+*
+* Thanks you, that you have left this header untouched
+*}>
+<{assign var=theme_name value=$xoTheme->folderName}><{assign var=theme_tpl value=$xoTheme->folderName|cat:'/tpl'}>
+<{includeq file="$theme_tpl/versions.html"}>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="<{$sd_langcode}>" xml:lang="<{$sd_langcode}>">
+    <head>
+    <{includeq file="$theme_tpl/metas.html"}>
+    <{includeq file="$theme_tpl/scripts.html"}>	
+    <{assign var=theme_top_order value=clr}><{assign var=theme_bottom_order value=clr}><{assign var=hide_content value=0}>
+    </head>
+    <body>
+	<div class="sd-hgcol"><div class="sd-hgcolimg"></div></div>
+	<div class="sd-box">
+	    <div class="sd-inhalt">
+		<div class="sd-inhalt-ol"></div>
+		<div class="sd-inhalt-or"><div></div>
+		</div>
+		<div class="sd-inhalt-ul"><div></div>
+		</div>
+		<div class="sd-inhalt-ur"><div></div>
+		</div>
+		<div class="sd-inhalt-om"><div></div>
+		</div>
+		<div class="sd-inhalt-um"><div></div>
+		</div>
+		<div class="sd-inhalt-ml"><div></div>
+		</div>
+		<div class="sd-inhalt-mr"><div></div>
+		</div>
+		<div class="sd-inhalt-mm"></div>
+	    <div class="sd-inhalt-hg">
+	    <{assign var=columns_layout value="sd-layout"}>
+	    <{includeq file="$theme_tpl/header_min.html"}>
+		<div align="center">
+		  <div style="width:400px;" class="inhalt">
+		  <p>&nbsp;</p>
+		  <p><{$lang_siteclosemsg}></p>
+		    <div class="sd-block">
+		      <div class="sd-block-hg">
+			<div class="sd-block-inhalt">
+			    <div class="sd-block-inhalt-ol"></div>
+			    <div class="sd-block-inhalt-or"><div></div>
+			    </div>
+			    <div class="sd-block-inhalt-ul"><div></div>
+			    </div>
+			    <div class="sd-block-inhalt-ur"><div></div>
+			    </div>
+			    <div class="sd-block-inhalt-om"><div></div>
+			    </div>
+			    <div class="sd-block-inhalt-um"><div></div>
+			    </div>
+			    <div class="sd-block-inhalt-ml"><div></div>
+			    </div>
+			    <div class="sd-block-inhalt-mr"><div></div>
+			    </div>
+			    <div class="sd-block-inhalt-mm"></div>
+			  <div class="sd-block-inhalt-hg">
+			  <form action="<{$xoops_url}>/user.php" method="post">
+			      <div align="right" style="_height:100%;overflow:hidden;">
+				  <div align="left" style="float:left;overflow:hidden;"><{$lang_username}></div>
+				  <input type="text" name="uname" size="21" maxlength="25" value="" />
+			      </div>
+			      <br />
+			      <div align="right" style="_height:100%;overflow:hidden;">
+				  <div align="left" style="float:left;overflow:hidden;"><{$lang_password}></div>
+				  <input type="password" name="pass" size="21" maxlength="32" />
+				  <input type="hidden" name="xoops_redirect" value="<{$xoops_requesturi}>" />
+				  <input type="hidden" name="xoops_login" value="1" />
+			      </div>
+			      <br />
+			      <div align="center">
+				  <button name="login" type="submit" class="sd-Button">
+				    <span class="btn">
+				      <span class="links"></span><span class="rechts"></span>
+				      <span class="oben"><{$lang_login}></span>
+				    </span>
+				  </button>
+			      </div>
+			      <br />
+			  </form>
+			  </div>
+			</div>
+		      </div>
+		    </div>
+		  </div>
+		</div>  
+		<div class="cleared"></div>
+		<{includeq file="$theme_tpl/footer.html"}>
+	    </div>
+	</div>
+	    <div class="cleared"></div>
+	<p class="sd-hg-footer"><a href="http://www.sinnedesign.com/"><{$sd_generator}> Template</a> created with Sinnedesign</p>
+	</div>
+    </body>
+</html>

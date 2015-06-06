@@ -1,0 +1,42 @@
+/*
+* Qualitative Theme Webdesign
+*
+* @license       http://www.gnu.org/licenses/old-licenses/gpl-2.0.html GNU General Public License (GPL)
+* @package       Sinnedesign, http://www.sinnedesign.com
+* @theme_author  Gesine Max (sinnedesign at www.sinnedesign.com)
+* @version	 $Id: style.ie7.css 702 2009-04-17 09:37:57Z sinnedesign $
+*
+* Thanks you, that you have left this header untouched
+*/
+
+.sd-inhalt-ol { clip: rect(auto 66px 66px auto); }
+.sd-inhalt-or { clip: rect(auto auto 66px 66px); }
+
+.sd-inhalt-ul { clip: rect(66px 66px auto auto); }
+.sd-inhalt-ur { clip: rect(66px auto auto 66px); }
+
+.sd-inhalt-om { clip: rect(auto auto 66px auto); }
+.sd-inhalt-um { clip: rect(66px auto auto auto); }
+
+.sd-inhalt-mr { clip: rect(auto auto auto 66px); }
+.sd-inhalt-ml { clip: rect(auto 66px auto auto); }
+
+.sd-navbar .rechts { clip: rect(auto auto auto 980px); }
+
+.sd-menue a .rechts { clip: rect(auto auto auto 410px); }
+
+.sd-block-inhalt-ol { clip: rect(auto 7px 7px auto); }
+.sd-block-inhalt-or { clip: rect(auto auto 7px 7px); }
+
+.sd-block-inhalt-ul { clip: rect(7px 7px auto auto); }
+.sd-block-inhalt-ur { clip: rect(7px auto auto 7px); }
+
+.sd-block-inhalt-om { clip: rect(auto auto 7px auto); }
+.sd-block-inhalt-um { clip: rect(7px auto auto auto); }
+
+.sd-block-inhalt-mr { clip: rect(auto auto auto 7px); }
+.sd-block-inhalt-ml { clip: rect(auto 7px auto auto); }
+
+.sd-pos-inhalt { height:1%; }
+
+.sd-Button .btn .rechts { clip: rect(auto auto auto 405px); }

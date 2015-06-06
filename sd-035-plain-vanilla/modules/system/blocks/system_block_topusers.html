@@ -1,0 +1,25 @@
+<{*
+* Qualitative Theme Webdesign
+*
+* @license       http://www.gnu.org/licenses/old-licenses/gpl-2.0.html GNU General Public License (GPL)
+* @package       Sinnedesign, http://www.sinnedesign.com
+* @theme_author  Gesine Max (sinnedesign at www.sinnedesign.com)
+* @version	 $Id: system_block_topusers.html 702 2009-04-17 09:37:57Z sinnedesign $
+*
+* Thanks you, that you have left this header untouched
+*}>
+<div style="width:100%;">
+    <ul>
+      <{foreach item=user from=$block.users}>
+	<li style="list-style:none;list-style-image:none;">
+	  <{if $user.avatar != ""}><div><img src="<{$user.avatar}>" alt="<{$user.name}>'s avatar" width="32px" /></div><{/if}>
+	  <div align="right">
+	      <div align="left" style="float:left; width:80%;">
+	      <{$user.rank}>&nbsp;&nbsp;<a href="<{$xoops_url}>/userinfo.php?uid=<{$user.id}>" title="<{$user.name}>"><{$user.name}></a>
+	      </div>
+	  (<{$user.posts}>)
+	  </div>
+	</li>
+      <{/foreach}>
+    </ul>
+</div>

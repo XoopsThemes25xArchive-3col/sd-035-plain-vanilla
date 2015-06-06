@@ -1,0 +1,119 @@
+/*
+* Qualitative Theme Webdesign
+*
+* @license       http://www.gnu.org/licenses/old-licenses/gpl-2.0.html GNU General Public License (GPL)
+* @package       Sinnedesign, http://www.sinnedesign.com
+* @theme_author  Gesine Max (sinnedesign at www.sinnedesign.com)
+* @version	 $Id: stylex.css 702 2009-04-17 09:37:57Z sinnedesign $
+*
+* Thanks you, that you have left this header untouched
+*/
+
+table { width: 100%; text-align: left; }
+
+table th { text-align: center; }
+
+table td, table th {
+	border-color: #ffddbb; 
+	border-width: 1;
+	vertical-align: top; 
+	font-size: 12px; 
+	padding: 0;
+}
+th { 
+	background-color: #770033; 
+	color: #ffddbb; 
+	padding: 2px; 
+	vertical-align: middle; 
+}
+
+img { border:0; }
+
+a:link, a:visited { outline: none; }
+
+a:hover { outline: none; }
+
+select { background-color: #fff6ee; }
+
+/*-----Banner-----*/
+#sd-banner { 
+	clear: both; 
+	position: relative; 
+	z-index: 100; 
+	width: 980px; 
+	height: 60px; 
+	padding-top: 0px;
+	padding-left: 10px;
+}
+#sd-banner.commercial { 
+	clear: both; 
+	position: relative; 
+	z-index: 100; 
+	width: 980px; 
+	height: 60px; 
+	padding-top: 0px;
+	padding-left: 10px;
+}
+
+/*----Logo-----*/
+#sd-header-logo {
+	padding-left:0px; 
+	padding-top:0px;
+	float:left;
+}
+#sd-header-logo-siteclosed, #sd-header-logo-redirect { 
+	padding-left: 2px; 
+	padding-top: 55px; 
+	float: left; 
+}
+#sd-header-banner {
+	position: relative; 
+	top: 60px; 
+	left: -83px; 
+	float: left;
+}
+#sd-logo-wrap { 
+	position: relative; 
+	width: 980px;
+	height: 60px;
+}
+
+/*---- Oben und Unten (2 Spalten) ----*/
+#sd-hg-ol-block, #sd-hg-ul-block {
+	margin-left: 1%; 
+	margin-right: 1%; 
+	padding: 0px;
+	float: left; 
+	width: 47%;
+}
+#sd-hg-or-block, #sd-hg-ur-block { 
+	margin-left: 1%; 
+	margin-right: 1%;
+	float: right; 
+	width: 47%;
+}
+* html #sd-hg-ol-block, * html #sd-hg-ul-block, * html #sd-hg-or-block, * html #sd-hg-ur-block { width: 47%; }
+#sd-hg-om-block, #sd-hg-um-block { 
+	margin-left: 1%; 
+	margin-right: 1%;
+	clear: both;
+}
+
+/* --- Oben und Unten (3 Spalten) --- */
+#sd-hg-o-block.sd-lmrhgblock .sd-blockzone, #sd-hg-u-block.sd-lmrhgblock .sd-blockzone { 
+	float: left; 
+	clear: none; 
+	width: 31.2%; 
+}
+* html #sd-hg-o-block.sd-lmrhgblock .sd-blockzone, 
+* html #sd-hg-u-block.sd-lmrhgblock .sd-blockzone { width:30.6%; }
+#sd-hg-o-block.sd-lmrhgblock #sd-hg-ol-block {}
+
+.sd-menue ul li { filter: alpha(opacity=90); -moz-opacity:0.9; opacity:0.9; }
+.sd-pos-hg ul li { 
+	background-image: url('../img/pos-punkte.png'); 
+	background-repeat: no-repeat; 
+	margin: 0.5em 0 0.5em 0;
+	padding: 0px 0px 0px 16px;
+	line-height: 1.2em; 
+}

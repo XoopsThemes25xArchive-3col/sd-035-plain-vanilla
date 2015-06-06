@@ -1,0 +1,18 @@
+<{*
+* Qualitative Theme Webdesign
+*
+* @license       http://www.gnu.org/licenses/old-licenses/gpl-2.0.html GNU General Public License (GPL)
+* @package       Sinnedesign, http://www.sinnedesign.com
+* @theme_author  Gesine Max (sinnedesign at www.sinnedesign.com)
+* @version	 $Id: system_block_online.html 702 2009-04-17 09:37:57Z sinnedesign $
+*
+* Thanks you, that you have left this header untouched
+*}>
+<div style="width:100%;">
+  <p><{$block.online_total}></p>
+  <div style="height:10px;"></div>
+  <p><{$block.lang_members}>: <{$block.online_members}></p>
+  <p><{$block.lang_guests}>: <{$block.online_guests}></p>
+  <div style="height:10px;"></div>
+  <p align="right"><{$block.online_names}> <a href="javascript:openWithSelfMain('<{$xoops_url}>/misc.php?action=showpopups&amp;type=online','Online',420,350);" title="<{$block.lang_more}>"><{$block.lang_more}></a></p>
+</div>
